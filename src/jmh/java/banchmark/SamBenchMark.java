@@ -15,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 @Measurement(iterations = 1)
 public class SamBenchMark {
 
-
     private static final String INPUT = "/Users/artem.balabaev/quantori/test_data/SortSam/input.bam";
     private static final String OUTPUT = "/Users/artem.balabaev/quantori/test_data/SortSam/sorted.bam";
     private static final String module = "SortSam";
@@ -44,7 +43,6 @@ public class SamBenchMark {
             add(prepareParam("USE_JDK_DEFLATER", "true"));
             add(prepareParam("USE_JDK_INFLATER", "true"));
         }};
-
 
         PicardCommandLine.startProcess(listOfArgs.toArray(new String[0]));
     }
